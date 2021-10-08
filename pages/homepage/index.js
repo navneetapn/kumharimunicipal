@@ -19,7 +19,7 @@ export default function Homepage() {
 	const [noticeBoardData, setNoticeBoardData] = useState([]);
 	const [tenderData, setTenderData] = useState([]);
 	const [ministersData, setMinistersData] = useState([]);
-	
+
 
 	useEffect(() => {
 		fetch("https://classified-claylist.herokuapp.com/api/notices")
@@ -147,18 +147,18 @@ export default function Homepage() {
 					<h3 className="text-center m-0 py-3 mb-4">Departmental Minister and Officer</h3>
 					<Card className="border-0">
 						<Row xs={1} md={2} lg={4} className="g-4">
-							{ ministersData.map((el) => (
-									<Col>
-										<Card>
-											<img src={el.image} alt={el.name} />
-											<Card.Body>
-												<Card.Title>{el.name}</Card.Title>
-												<Card.Text>
-													{el.position}
-												</Card.Text>
-											</Card.Body>
-										</Card>
-									</Col>
+							{ministersData.map((el, index) => (
+								<Col key={index}>
+									<Card>
+										<img src={el.image} alt={el.name} />
+										<Card.Body>
+											<Card.Title>{el.name}</Card.Title>
+											<Card.Text>
+												{el.position}
+											</Card.Text>
+										</Card.Body>
+									</Card>
+								</Col>
 							))
 							}
 						</Row>
@@ -207,20 +207,20 @@ export default function Homepage() {
 						<Col>
 							<Card className="latestNewsCard">
 								<Card.Body>
-									<Card.Header className="bold bg-primary text-white">Tenders</Card.Header>
+									<Card.Header className="bold bg-primary text-white text-center">Tenders</Card.Header>
 									<ListGroup className="list p-4 marqueeNewHome">
 										<marquee behavior="scroll" direction="up">
-										{
-											tenderData.length > 0 && tenderData.map((el, index)=> (
-												<ListGroup.Item className="position-relative px-4" key={index}>
-													<a href={el.file} target="_blank" className="newInfo">
-														<i className="fa fa-circle"></i> {el.title}
-													</a>
-												</ListGroup.Item>
-											))
-										}
+											{
+												tenderData.length > 0 && tenderData.map((el, index) => (
+													<ListGroup.Item className="position-relative px-4" key={index}>
+														<a href={el.file} target="_blank" className="newInfo">
+															<i className="fa fa-circle"></i> {el.title}
+														</a>
+													</ListGroup.Item>
+												))
+											}
 										</marquee>
-										
+
 									</ListGroup>
 								</Card.Body>
 							</Card>
@@ -228,7 +228,7 @@ export default function Homepage() {
 						<Col>
 							<Card className="latestNewsCard">
 								<Card.Body>
-									<Card.Header className="bold bg-primary text-white">Notices</Card.Header>
+									<Card.Header className="bold bg-primary text-white text-center">Notices</Card.Header>
 									<ListGroup className="list p-4 marqueeNewHome">
 										<marquee behavior="scroll" direction="up">
 											{
@@ -251,7 +251,7 @@ export default function Homepage() {
 
 			<section className="otherLinkWrapper py-5 my-3">
 				<Container>
-					<h4 className="bold pb-3"> Other Links</h4>
+					<h4 className="bold pb-3 text-center"> Other Informational Links</h4>
 					<Row xs={1} md={2} lg={4} className="otLinks">
 
 						<Col>
@@ -498,25 +498,25 @@ export default function Homepage() {
 
 
 
-			<section className="bg-light py-5 galleryWrapper galleryWrapperHome">
-
+			<div className="galleryHome py-5">
 				<Container>
-					<h3 className="text-left m-0 py-3 mb-4">Event Gallery</h3>
+					<h3 className="text-center m-0 py-3 mb-4">Event Gallery</h3>
 				</Container>
-				<SRLWrapper>
-					<div className="container">
-						{galleryData.map(image => (
-							<div key={image.id} className="image-card">
-								<a href={`${image.image}`}>
-									<img className="image" src={`${image.image}`} alt="" />
-								</a>
-							</div>
-						))}
-					</div>
-				</SRLWrapper>
+				<section className="bg-light galleryWrapper galleryWrapperHome">
+					<SRLWrapper>
+						<div className="container">
+							{galleryData.map(image => (
+								<div key={image.id} className="image-card">
+									<a href={`${image.image}`}>
+										<img className="image" src={`${image.image}`} alt="" />
+									</a>
+								</div>
+							))}
+						</div>
+					</SRLWrapper>
 
-			</section>
-
+				</section>
+			</div>
 		</>
 	)
 }

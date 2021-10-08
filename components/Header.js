@@ -8,17 +8,17 @@ import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 export default function Header() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [basePath, setBasepath] = useState([]);
-    const [mcorpLogo, setMcorpLogo] = useState([]);
+    const [settings, setsettings] = useState([]);
     useEffect(() => {
         setBasepath(window.location.origin);
     }, []);
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/logo")
+        fetch("https://classified-claylist.herokuapp.com/api/settings")
             .then(res => res.json())
             .then(
                 (result) => {
                     setIsLoaded(true);
-                    setMcorpLogo(result.data);
+                    setsettings(result.data);
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -29,7 +29,7 @@ export default function Header() {
     return (
         <>  
             <Head>
-                <title>Nagar Nigam Korba</title>
+                <title>{settings.site_name}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <div className="py-2 topnavbar">
@@ -37,9 +37,9 @@ export default function Header() {
                     <Row className="g-4">
                         <Col className="col">
                             <p className="text-right m-0">
-                                <a className="text-white mx-3"><i className="fa fa-phone"></i> 89899899899</a>
-                                <a className="text-white mx-3"><i className="fa fa-envelope-o"></i> testmail@example.com</a>
-                                <a className="text-white adminLogin" href="https://classified-claylist.herokuapp.com/admin/login" target="_blank"><i className="fa fa-lock"></i> Admin Login</a>
+                                <a className="text-white mx-3"><i className="fa fa-phone"></i> {settings.mobile}</a>
+                                <a className="text-white mx-3"><i className="fa fa-envelope-o"></i> {settings.email}</a>
+                                <a className="text-white adminLogin" href={settings['admin-url']} target="_blank"><i className="fa fa-lock"></i> Admin Login</a>
                             </p>
                         </Col>
                     </Row>
@@ -49,12 +49,12 @@ export default function Header() {
                 <Container className="py-2">
                     <div className="mainHeader">
                         <Navbar.Brand href="/">
-                            <img src={mcorpLogo.value} alt="Korba Logo" />
+                            <img src={settings.logo} alt="Korba Logo" />
                         </Navbar.Brand>
                         <div className="headerRight">
-                            <h4>नगर निगम कोरबा छत्तीसगढ़</h4>
-                            <p>Municipal Corporation Korba Chhattisgarh</p>
-                            <h6 className="text-right">प्रगति के पथ पर...</h6>
+                            <h4>{settings['title-hindi']}</h4>
+                            <p>{settings.site_name}</p>
+                            <h6 className="text-right">{settings['sub-title']}</h6>
                         </div>
                     </div>
                 </Container>

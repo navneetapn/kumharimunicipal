@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, Container } from 'react-bootstrap'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
@@ -6,6 +6,22 @@ import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
 
 export default function Contact() {
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [contactData, setcontactData] = useState([]);
+    useEffect(() => {
+        fetch("https://classified-claylist.herokuapp.com/api/contact-us")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setcontactData(result.data);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
+    }, []);
     return (
         <>
             <Header />
@@ -14,15 +30,15 @@ export default function Contact() {
                 <Container>
                     <Card className="py-2 mb-5 text-center">
                         <i className="fa-2x fa fa-phone"></i>
-                        <p>98989999898</p>
+                        <p className="m-0 mt-2">{contactData.mobile}</p>
                     </Card>
                     <Card className="py-2 mb-5 text-center">
                         <i className="fa-2x fa fa-envelope-o"></i>
-                        <p>testmail@example.com</p>
+                        <p className="m-0 mt-2">{contactData.email}</p>
                     </Card>
                     <Card className="py-2 mb-5 text-center">
                         <i className="fa-2x fa fa-map-marker"></i>
-                        <p>Lorem, ipsum dolor sit, amet consectetur adipisicing eli</p>
+                        <p className="m-0 mt-2">{contactData.address}</p>
                     </Card>
                 </Container>
                 </section>

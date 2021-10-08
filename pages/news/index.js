@@ -74,7 +74,7 @@ export default function News() {
                 <Container className="py-5">
                     <h3 className="text-center my-5"> For Downloads</h3>
                     <Table responsive bordered>
-                        <thead className="text-white">
+                        <thead className="text-white bg-primary">
                             <tr>
                                 <th>Sr No</th>
                                 <th>News Subject</th>
@@ -90,7 +90,7 @@ export default function News() {
                                             <td>{idx + 1}</td>
                                             <td>{el.title}</td>
                                             <td>{el.created_at}</td>
-                                            <td><a href={el.file}><Button className="align-center btn btn-primary"><i className="fa fa-download"></i></Button></a></td>
+                                            <td className="text-center"><a href={el.file}><Button className="align-center btn btn-primary"><i className="fa fa-download"></i></Button></a></td>
                                         </tr>
                                     ))
                                 }
