@@ -19,6 +19,7 @@ export default function Homepage() {
 	const [noticeBoardData, setNoticeBoardData] = useState([]);
 	const [tenderData, setTenderData] = useState([]);
 	const [ministersData, setMinistersData] = useState([]);
+	
 
 	useEffect(() => {
 		fetch("https://classified-claylist.herokuapp.com/api/notices")
@@ -147,11 +148,10 @@ export default function Homepage() {
 					<h3 className="text-center m-0 py-3 mb-4">Departmental Minister and Officer</h3>
 					<Card className="border-0">
 						<Row xs={1} md={2} lg={4} className="g-4">
-							{ministersData && 
-								ministersData.map((el)=> {
+							{ ministersData.map((el) => (
 									<Col>
 										<Card>
-											<Image src={el.image} alt="Sample Text" />
+											<img src={el.image} alt={el.name} />
 											<Card.Body>
 												<Card.Title>{el.name}</Card.Title>
 												<Card.Text>
@@ -160,41 +160,8 @@ export default function Homepage() {
 											</Card.Body>
 										</Card>
 									</Col>
-								})
+							))
 							}
-							{/* <Col>
-								<Card>
-									<Image src={dm} alt="Sample Text" />
-									<Card.Body>
-										<Card.Title>DR. Shivkumar Dahariya</Card.Title>
-										<Card.Text>
-											Urban Development Minister
-										</Card.Text>
-									</Card.Body>
-								</Card>
-							</Col>
-							<Col>
-								<Card>
-									<Image src={ias} alt="Sample Text" />
-									<Card.Body>
-										<Card.Title>Smt. Ranu Sahu</Card.Title>
-										<Card.Text>
-											I.A.S
-										</Card.Text>
-									</Card.Body>
-								</Card>
-							</Col>
-							<Col>
-								<Card>
-									<Image src={mayor} alt="Sample Text" />
-									<Card.Body>
-										<Card.Title>Mr. Rajkishore Prasad</Card.Title>
-										<Card.Text>
-											Mayor
-										</Card.Text>
-									</Card.Body>
-								</Card>
-							</Col> */}
 						</Row>
 					</Card>
 				</Container>
@@ -242,16 +209,18 @@ export default function Homepage() {
 							<Card className="latestNewsCard">
 								<Card.Body>
 									<Card.Header className="bold bg-primary text-white">Tenders</Card.Header>
-									<ListGroup className="list p-4">
+									<ListGroup className="list p-4 marqueeNewHome">
+										<marquee behavior="scroll" direction="up">
 										{
-											tenderData.length > 0 && tenderData.map((el)=> {
-												<ListGroup.Item className="position-relative px-4">
-													<a href={el.file}>
+											tenderData.length > 0 && tenderData.map((el, index)=> (
+												<ListGroup.Item className="position-relative px-4" key={index}>
+													<a href={el.file} target="_blank" className="newInfo">
 														<i className="fa fa-circle"></i> {el.title}
 													</a>
 												</ListGroup.Item>
-											})
+											))
 										}
+										</marquee>
 										
 									</ListGroup>
 								</Card.Body>
@@ -261,16 +230,18 @@ export default function Homepage() {
 							<Card className="latestNewsCard">
 								<Card.Body>
 									<Card.Header className="bold bg-primary text-white">Notices</Card.Header>
-									<ListGroup className="list p-4">
-										{
-											noticeBoardData.length > 0 && noticeBoardData.map((el)=> {
-												<ListGroup.Item className="position-relative px-4">
-													<a href={el.file}>
-														<i className="fa fa-circle"></i> {el.title}
-													</a>
-												</ListGroup.Item>
-											})
-										}
+									<ListGroup className="list p-4 marqueeNewHome">
+										<marquee behavior="scroll" direction="up">
+											{
+												noticeBoardData.length > 0 && noticeBoardData.map((el, index) => (
+													<ListGroup.Item className="position-relative px-4" key={index}>
+														<a href={el.file} target="_blank" className="newInfo">
+															<i className="fa fa-circle"></i> {el.title}
+														</a>
+													</ListGroup.Item>
+												))
+											}
+										</marquee>
 									</ListGroup>
 								</Card.Body>
 							</Card>

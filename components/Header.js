@@ -4,10 +4,27 @@ import Head from "next/head";
 import logo from '../public/images/logo.png';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 
+
 export default function Header() {
+    const [isLoaded, setIsLoaded] = useState(false);
     const [basePath, setBasepath] = useState([]);
+    const [mcorpLogo, setMcorpLogo] = useState([]);
     useEffect(() => {
         setBasepath(window.location.origin);
+    }, []);
+    useEffect(() => {
+        fetch("https://classified-claylist.herokuapp.com/api/logo")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setMcorpLogo(result.data);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
     }, []);
     return (
         <>  
@@ -32,7 +49,7 @@ export default function Header() {
                 <Container className="py-2">
                     <div className="mainHeader">
                         <Navbar.Brand href="/">
-                            <Image src={logo} alt="Korba Logo" />
+                            <img src={mcorpLogo.value} alt="Korba Logo" />
                         </Navbar.Brand>
                         <div className="headerRight">
                             <h4>नगर निगम कोरबा छत्तीसगढ़</h4>
