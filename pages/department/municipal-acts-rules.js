@@ -26,22 +26,22 @@ export default function Municipalactsrules() {
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <a href="#" title="Information Act">Information Act</a></td>
+                                        <a href={basePath + "/info-needed"} title="Information Act">Information Act</a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>
-                                        <a href="docs/TheChhattisgarhMunicipalitiesAct_1.pdf" title="MUNICIPAL ACT" target="_blank">Municipal Act</a></td>
+                                        <a href={basePath + "/info-needed"} title="MUNICIPAL ACT" target="_blank">Municipal Act</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>
-                                        <a href="#" title="BHUMI VIKAS ADHINIYAM">Bhumi Vikas Adhiniyam</a></td>
+                                        <a href={basePath + "/info-needed"} title="BHUMI VIKAS ADHINIYAM">Bhumi Vikas Adhiniyam</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>
-                                        <a href="docs/colonizer_rules.pdf" title="MUNICIPAL COLONIZER RULES" target="_blank">Municipal Colonizer Rules</a></td>
+                                        <a href={basePath + "/info-needed"} title="MUNICIPAL COLONIZER RULES" target="_blank">Municipal Colonizer Rules</a></td>
                                 </tr>
                             </tbody>
                         </table>

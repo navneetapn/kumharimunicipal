@@ -67,31 +67,29 @@ export default function Header() {
                             <Nav className="me-auto">
                                 <Nav.Link href="/">Home</Nav.Link>
                                 <NavDropdown title="About Us">
-                                    <NavDropdown.Item href={basePath + "/about"}>Introduction of KMC</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/about"}>Introduction of Korba</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/about/korbamap"}>Map of Korba</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/about"}>Introduction of Kumhari</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/about/korbamap"}>Map of Kumhari</NavDropdown.Item>
                                     <NavDropdown.Item href={basePath + "/about/social-geological-of-korba"}>Social and Geological of Korba</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/docs/ward_information.pdf"} target="_blank">Information of Wards</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"} target="_blank">Information of Wards</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Administration">
                                     <NavDropdown.Item href={basePath+"/administration/organisation-structure"}>Organizational Structure</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/administration/mayor-list-parshad-list-alderman-list"}>Mayor List, Parshad List, Alderman List</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/administration/commissioner-list"}>Commissioner List</NavDropdown.Item>
-                                    <NavDropdown.Item href="docs/staffinformation2021.pdf" target="_blank">Staff List</NavDropdown.Item> 
-                                    <NavDropdown.Item href="documents/Zonal_Information.pdf" target="_blank">Zonal Information</NavDropdown.Item>
-                                    <NavDropdown.Item href="documents/Quarterly_Information_of_Municipal_Staff.pdf" target="_blank">Quarterly Information of Municipal Staff</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"}>Mayor List, Parshad List, Alderman List</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"} >Staff List</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"} target="_blank">Zonal Information</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"}>Quarterly Information of Municipal Staff</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Department">
                                     <NavDropdown title="Department">
-                                        <NavDropdown.Item href="#">A/c  Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Health Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Electrical Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Public Work Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Revenue Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Vehicle Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Water Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Pension Department</NavDropdown.Item> 
-                                        <NavDropdown.Item href="#">Birth Death Marriage Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>A/c  Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Health Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Electrical Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Public Work Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Revenue Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Vehicle Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Water Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Pension Department</NavDropdown.Item> 
+                                        <NavDropdown.Item href={basePath + "/info-needed"}>Birth Death Marriage Department</NavDropdown.Item> 
                                     </NavDropdown>
                                     <NavDropdown.Item href={basePath+"/department/scheme"}>Scheme</NavDropdown.Item>
                                     <NavDropdown.Item href={basePath+"/department/municipal-acts-rules"}>Municipal Act/ Rule</NavDropdown.Item>

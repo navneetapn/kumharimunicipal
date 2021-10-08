@@ -15,72 +15,16 @@ export default function Socialgeological() {
             <section className="sectionBlock py-5">
                 <Container>
                     <h2>OVERVIEW</h2>
-                    <p>Korba district was accorded the status of a full – fledged revenue district with effect from 25 may, 1998.Naturally endowed  with mineral resources like limestone, fireclay, etc possesses all the key ingredients required for thermal power generation.Korba District is an amalgam off primitive tribal culture, resplendent natural beauty and urban industrial enterprise.</p>
+                    <p>Kumhari is located at 21.27°N 81.52°E.[1] It has an average elevation of 285 metres (935 feet). Area: 36.9 km2 Density: 949.7 inh./km2</p>
 
-                    <p>The district headqurter is Korba city, which is situated on the banks of the confluence off rivers hasdeo and ahiran.</p>
+                    <p>Kumhari is divided into 24 wards. Kumhari municipal corporation had controlled Kumhari town and also controlled 5 villages named Kugda, Rampur, Janjgiri, Parsada, Pahanda. As of 2011 India census,[2] Kumhari had a population of 45000. Males constitute 52% of the population and females 48%. Kumhari has an average literacy rate of 63%, higher than the national average of 59.5%: male literacy is 71%, and female literacy is 54%. In Kumhari, 16% of the population is under 6 years of age.</p>
 
-                    <p>Korba is blessed eith a bounty of nature where a number of tribes are nurtured.Also known as the power capital of the state korba has become the industrial hub being enriched with all the essential raw materials for power generation viz.coal and water.Korba is know for its coal mines such as area (one of the biggest coal mine and BALCO Aluminum Plant.</p>
-
-                    <h2>MUNICIPAL AREA</h2>
-                    <p>In the year 1997 Korba was declared as district.In the year 1998 SA DA was dissolved and Muncipal corporation came into existence with rapid increase in population before 1998 while SADA was still functional its territorial jurisdiction before formation of Municipal Corporation was 76 transitory villages was taken as 56, while formation of the Korba municipal Corporation.With the increase in population and urban sprawl, the municipal boundary changes with time.the municipal Corporation encompasses an area of 215 sq.km with 67 numbers of wards.</p>
-
-                    <h4>Table - Location &amp; Demographics Of Korba</h4>
-
-                    <table className="table table-bordered mt-4">
-                        <tbody><tr>
-                            <th colSpan="2">Location</th>
-                        </tr>
-                            <tr>
-                                <td>Latitude</td>
-                                <td>22  01’ TO 23 01</td>
-                            </tr>
-                            <tr>
-                                <td>Longitude</td>
-                                <td>82 08’ TO 83 09</td>
-                            </tr>
-                            <tr>
-                                <td>Height from sea level</td>
-                                <td>304.8 meters</td>
-                            </tr>
-                        </tbody></table>
-
-                    <table className="table table-bordered mt-4">
-                        <tbody><tr>
-                            <th colSpan="2">DEMOGRAPHICS(Census 2011)</th>
-                        </tr>
-                            <tr>
-                                <td>Total Population (Census 2011)</td>
-                                <td>363390</td>
-                            </tr>
-                            <tr>
-                                <td>Population 2001</td>
-                                <td>315690</td>
-                            </tr>
-                            <tr>
-                                <td>Sex Ratio</td>
-                                <td>925</td>
-                            </tr>
-                            <tr>
-                                <td>Male Population</td>
-                                <td>188818</td>
-                            </tr>
-                            <tr>
-                                <td>Female Population</td>
-                                <td>174572</td>
-                            </tr>
-                            <tr>
-                                <td>Literacy</td>
-                                <td>83.38%</td>
-                            </tr>
-                            <tr>
-                                <td>Total Area of the District</td>
-                                <td>7,14,544 hectare</td>
-                            </tr>
-                            <tr>
-                                <td>Total Forest Coverage of the district</td>
-                                <td>2,83,497 Hectares</td>
-                            </tr>
-                        </tbody></table>
+                    <strong></strong>
+                    <p><strong>Kevalya Dham:</strong> Jain temple of white marble is on NH 6 and is a place of tourist attraction. Kevalya Dham is a popular Jain tourist pilgrim attraction located in Kumhari town. The temple is also known as Sri Adinath Jain Shwetambar Tirth collection of 26 small and big Jain temples magnificently built with marbles. The temple enshrines the idols of all 24 Tirthankars in small temples with one large temple complex with idol of Rishabhdev. On the corner wall within the shrine carries a detailed description of Sri Shatrunjay Maha Tirtha.
+                        <strong>Mahamaya Temple:</strong> There is an old temple of goddess Mahamaya.The beautiful Maa Mahamaya Devi Mandir in Kumhari town is another popular religious attraction. Tourists and devotees from near and far off places visit this temple to offer prayers and seek goddess Mahamaya's blessings.
+                        <strong>Kharun River:</strong> Kharun River is a tributary of Shivnath river that empties into Mahanadi river.
+                        <strong>Sai Dham:</strong> Sai dham is shridi sai baba temple located at NH 6 Kumhari.
+                        Durga Maidan Durga Maidan situated in badi colony or ward no 15 has many new things to explore around. There is sahni mandir and during navratri many across charoda and in radius of kumhari come here to play garba and dandiya and many competition are being held in area.</p>
                 </Container>
             </section>
             <Footer />

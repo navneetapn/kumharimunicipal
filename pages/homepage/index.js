@@ -19,7 +19,10 @@ export default function Homepage() {
 	const [noticeBoardData, setNoticeBoardData] = useState([]);
 	const [tenderData, setTenderData] = useState([]);
 	const [ministersData, setMinistersData] = useState([]);
-
+	const [basePath, setBasepath] = useState([]);
+	useEffect(() => {
+		setBasepath(window.location.origin);
+	}, []);
 
 	useEffect(() => {
 		fetch("https://classified-claylist.herokuapp.com/api/notices")
@@ -174,7 +177,7 @@ export default function Homepage() {
 							<Card className="p-3">
 								<ul className="list-unstyled">
 									<li><a href="https://eproc.cgstate.gov.in/CHEPS/security/getSignInAction.do"><i className="fa fa-check-square-o" aria-hidden="true"></i> E-Procurement (eProc)</a> </li>
-									<li><a href="https://korba.urbanecg.gov.in/CitizenHome.html"><i className="fa fa-home" aria-hidden="true"></i> Property Tax (urbanecg)</a> </li>
+									<li><a href={basePath + "/info-needed"}><i className="fa fa-home" aria-hidden="true"></i> Property Tax (urbanecg)</a> </li>
 									<li><a href="http://bpms.sudacg.in/"><i className="fa fa-building-o" aria-hidden="true"></i> Building Permission (BPMS)</a> </li>
 								</ul>
 							</Card>
@@ -193,7 +196,7 @@ export default function Homepage() {
 								<ul className="list-unstyled">
 									<li><a href="https://edistrict.cgstate.gov.in/PACE/login.do"><i className="fa fa-certificate" aria-hidden="true"></i> Birth Death Marriage Certificate (e District)</a> </li>
 									<li><a href="https://edistrict.cgstate.gov.in/PACE/login.do"><i className="fa fa-id-card-o" aria-hidden="true"></i>Trade Licence</a> </li>
-									<li><a href="https://korba.urbanecg.gov.in/CitizenHome.html"><i className="fa fa-tint" aria-hidden="true"></i> Water Tax</a> </li>
+									<li><a href={basePath + "/info-needed"}><i className="fa fa-tint" aria-hidden="true"></i> Water Tax</a> </li>
 								</ul>
 							</Card>
 						</Col>

@@ -14,17 +14,13 @@ export default function About() {
             <BreadCrumb banner={bannerBreadcrumbs} name="About Us" />
                 <section className="sectionBlock py-5">
                     <Container>
-                    <p>कोरबा शहर कोरबा जिले का जिला मुख्यालय है। कोरबा सन् 1973 तक ग्राम पंचायत था जो कि कटघोरा तहसील के अंतर्गत आता था जिसका जिला बिलासपुर था। कोरबा में कोयला एवं पानी की पर्याप्त आपूर्ति की संभावना को दृष्टिगत रखते हुए औद्योगिक इकाईयों की स्थापना हेतु संसाधनों की प्रचुरता के कारण सन् 1973 में इसे विशेष क्षेत्र विकास प्राधिकरण बनाया गया। इसकी परिसीमा में कोरबा नगर के अलावा आस-पास के 73 गावों को शामिल किया गया।</p>
+                    <p>Kumhari is a city located in the Indian state of Chhattisgarh. It comes under the Durg district. It is situated at 21°27'N 81°52' and has an average elevation of 284 meters above the sea level.</p>
 
-                    <p>सन् 1998 में विशेष क्षेत्र विकास प्राधिकरण का विघटन हुआ तथा नगर पालिक निगम का गठन किया गया। नगर पालिक निगम की परिसीमा का पुनः निर्धारण किया गया। विशेष क्षेत्र विकास प्राधिकरण के समय 74 ग्रामों के क्षेत्राधिकार को कम करते हुए 56 ग्रामों को नगर पालिक निगम कोरबा की परिधि में रखा गया। नगर पालिक निगम कोरबा का क्षेत्रफल 215.02 वर्ग किलो मीटर है। क्षेत्रफल की दृष्टि से कोरबा नगर पालिक निगम छत्तीसगढ़ राज्य में सबसे बड़ा है।</p>
+                    <p>Kumhari is located in Dhamdha tehsil of Durg district in the Indian state of Chhattisgarh. Kumhari is a Nagar Palika Parishad and situated at Durg district and Raipur district border beside Karun River.</p>
 
-                    <p>सन् 2000 में कोरबा को जिला का दर्जा दिया गया। वर्तमान में जनसंख्या के अंतिम आंकड़ो के अनुसार कोरबा जिले की जनसंख्या 12,06,563 है तथा कोरबा नगर निगम की जनसंख्या 365,073 है।</p>
+                    <p>The nearest city to Kumhari in Durg is Bhilai. It is situated at a distance of 5.5 nm towards the west of the Kumhari city. Raipur, the capital city of the state is located towards the east of this Chhattisgarh city. Kumhari's distance from Raipur is about 6.8 nm. The other nearby towns are Jamul and Banbarad situated towards the west of the Kumhari city of Durg. While its distance from the town of Jamul is 6.6 nm, Banbarad is situated 9 nm away from the city of Kumhari. Towards the north of the Kumhari city are the towns of Dharsinwa and Kusmi situated at a distance of 11.7 nm and 15 nm respectively. The city of Mandhar in Raipur district is situated at a distance of 10.6 nm towards the east of the city of Kumhari. The city of Patan is situated 14 nm away towards the south of Kumhari, Chhattisgarh.</p>
 
-                    <p>कोरबा शहर विकास योजना का मुख्य उद्देश्य शासन के दिशा-निर्देशों के अनुसार एक ऐसी दीर्घकालीन अभिकल्पना तथा रणनीति तैयार करना है जो कि शहर को व्यवस्थित, सुविकसित प्रतिस्पर्धा, सुंदर एवं माडल के रूप में विकसित करेगा। शहर विकास योजना के नतीजन क्षेत्रवार निवेशों तथा शहर के रूपांतर हेतु सुधार हेतु क्षेत्रों को चिन्हांकित किया जा सकेगा।</p>
-
-                    <p>कोरबा नगर हसदेव एवं अहिरन नदियों के संगम के रमणीय स्थान पर स्थित है। यह 22 डि.-20 अंश उत्तरी अक्षांश एवं 82डि.-42 अंश पूर्वी देशांतर पर रेखा पर स्थित है। इसकी समुद्र सतह से ऊंचाई 304.8 मीटर है। यह नगर हावड़ा नागपुर बंबई दक्षिण पूर्व प्रमुख रेल मार्ग पर स्थित चांपा जॅक्शन से रेल एवं सड़क द्वारा जुड़ा हुआ है। इस नगर से कोल इंडिया लिमिटेड को कलकत्ता मुख्यालय 666 कि.मी. की दूरी पर तथा दक्षिण पूर्वी कोयला प्रक्षेत्र का मुख्यालय बिलासपुर 120 कि.मी. की दूरी पर स्थित है।</p>
-
-                    <p>यह नगर संभागीय एवं जिला मुख्यालय से चांपा मार्ग से एवं रतनपुर पाली कटघोरा सड़क मार्गाें से पूरे साल सुविधाजनक रूप से जुड़ा रहता है। कोरबा से हवाई संयोजक हेतु हवाई पट्टी उपलब्ध है, नियमित हवाई उड़ान से कोरबा को नही जोड़ा गया है।</p>
+                    <p>The nearest airport to this Chhattisgarh city is the one located in [Raipur] Swami Vivekanand airport.</p>
                     </Container>
                 </section>
             <Footer />

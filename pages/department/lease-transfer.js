@@ -12,7 +12,7 @@ export default function Leasetransfer() {
             <BreadCrumb banner={bannerBreadcrumbs} name="Department / Lease Transfer" />
             <section className="sectionBlock py-5">
                 <Container>
-                    Under Construction
+                    Information needs to be provided
                 </Container>
             </section>
             <Footer />

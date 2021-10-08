@@ -47,11 +47,6 @@ export default function Footer() {
                                 <Image src={digitalindia} alt="paidnrservices" />
                             </a>
                         </li>
-                        <li className="">
-                            <a href="https://korba.gov.in/" target="_blank">
-                                <Image src={cpkorba} alt="parivahan" />
-                            </a>
-                        </li>
                     </ul>
                 </Container>
             </div>

@@ -15,7 +15,7 @@ export default function Wardinformation() {
             <BreadCrumb banner={bannerBreadcrumbs} name="About / Ward of information" />
             <section className="sectionBlock py-5">
                 <Container>
-                    <Image src={map} alt="Korba Map" />
+                    Information needs to be provided
                 </Container>
             </section>
             <Footer />
