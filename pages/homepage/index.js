@@ -50,7 +50,6 @@ export default function Homepage() {
 				}
 			)
 	}, []);
-	console.log(`ministersData`, ministersData)
 	useEffect(() => {
 		fetch("https://classified-claylist.herokuapp.com/api/tenders")
 			.then(res => res.json())
