@@ -1,0 +1,10 @@
+/* ensure all pages have Bootstrap CSS */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'style.css';
+
+.md-container {
+  max-width: 800px;
+  padding-top: 2rem;
+}
+
