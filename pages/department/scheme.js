@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 import { Container, Table, Button, Row, Col, Placeholder, Alert } from 'react-bootstrap'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
 export default function Scheme() {
-
+    const [basePath, setBasepath] = useState([]);
+    useEffect(() => {
+        setBasepath(window.location.origin);
+    }, []);
     return (
         <>
             <Header />

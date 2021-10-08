@@ -13,10 +13,10 @@ export default function Korbamap() {
     return (
         <>
             <Header />
-            <BreadCrumb banner={bannerBreadcrumbs} name="About / Korba Map" />
+            <BreadCrumb banner={bannerBreadcrumbs} name="About / Kumhari Map" />
             <section className="sectionBlock py-5">
                 <Container>
-                    <Image src={map} alt="Korba Map" />
+                    <Image src={map} alt="Kumhari Map" />
                 </Container>
             </section>
             <Footer />
