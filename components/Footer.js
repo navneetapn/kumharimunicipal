@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Image from 'next/image';
 import chhattisgarh from '../public/images/logos/1.png';
@@ -11,6 +11,10 @@ import cpkorba from '../public/images/logos/7.png';
 import sarvanglogo from '../public/images/logos/sarvanglogo.png';
 
 export default function Footer() {
+    const [basePath, setBasepath] = useState([]);
+    useEffect(() => {
+        setBasepath(window.location.origin);
+    }, []);
     return (
         <footer className="footer">
 
@@ -54,10 +58,16 @@ export default function Footer() {
                 <Container>
                     <ul className="footerLinksList list-unstyled m-0">
                         <li className="">
-                            <a href="/news">News</a>
+                            <a href="/">Home</a>
                         </li>
                         <li className="">
-                            <a href="/contact">Contact</a>
+                            <a href={basePath + "/about"}>Introduction of Kumhari</a>
+                        </li>
+                        <li className="">
+                            <a href="/about/korbamap">Kumhari Map</a>
+                        </li>
+                        <li className="">
+                            <a href="/news">News &amp; Noticeboard</a>
                         </li>
                         <li className="">
                             <a href="/tenders">Tenders</a>
@@ -69,13 +79,10 @@ export default function Footer() {
                             <a href="/noticeboard">Noticeboard</a>
                         </li>
                         <li className="">
+                            <a href={basePath + "/info-needed"}>Commissioner List</a>
+                        </li>
+                        <li className="">
                             <a href="/contact">Contact Us</a>
-                        </li>
-                        <li className="">
-                            <a href="/about/korbamap">Korba Map</a>
-                        </li>
-                        <li className="">
-                            <a href="/administration/commissioner-list">Commissioner List</a>
                         </li>
                     </ul>
                 </Container>
@@ -86,9 +93,9 @@ export default function Footer() {
                         <Col className="col col-sm-12 col-md-12">
                             <div className="text-description text-light">
                                 <div className="footer-content">
-                                    <p>An official website of Korba Municipal Corporation</p>
-                                    <p>Content on this website is published and managed by Korba Municipal Corporation</p>
-                                    <p>Copyright © 2017. <a href="http://korbamunicipal.in">korbamunicipal.in</a> &nbsp;All Rights Reserved.</p>
+                                    <p>An official website of Kumhari Municipal Corporation</p>
+                                    <p>Content on this website is published and managed by Kumhari Municipal Corporation</p>
+                                    <p>Copyright © 2021. <a href="http://kumharimunicipal.in">kumharimunicipal.in</a> &nbsp;All Rights Reserved.</p>
                                 </div>
                             </div>
                         </Col>

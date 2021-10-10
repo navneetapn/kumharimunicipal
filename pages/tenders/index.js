@@ -11,7 +11,10 @@ export default function Tender() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [tenderData, setTenderData] = useState([]);
-        
+    const [basePath, setBasepath] = useState([]);
+    useEffect(() => {
+        setBasepath(window.location.origin);
+    }, []);
     useEffect(() => {
         fetch("https://classified-claylist.herokuapp.com/api/tenders")
             .then(res => res.json())
@@ -71,6 +74,20 @@ export default function Tender() {
             <section className="bg-light tenderWrapper">
                 <Container className="py-5">
                     <h3 className="text-center my-5"> For Downloads</h3>
+                    <div className="row tenderFormLink">
+                       <div className="col-2">
+                           <a href={basePath + "/docs/FormA.pdf"} title="Form A" target="_blank">1. Form A</a>
+                       </div>
+                       <div className="col-2">
+                          <a href={basePath + "/docs/FormB.pdf"} title="Form B" target="_blank">2. Form B</a>
+                       </div>
+                       <div className="col-5">
+                          <a href={basePath + "/docs/PQ more than 3 crores upto 10 crores.pdf"} title="" target="_blank">3. PQ more than 3 crores upto 10 crores</a>
+                       </div>
+                       <div className="col-3">
+                           <a href={basePath + "/docs/PQ more than 10 crores.pdf"} title="" target="_blank">4. PQ more than 10 crores</a>
+                       </div>
+                    </div>
                     <Table responsive bordered>
                         <thead className="text-white bg-primary">
                             <tr>

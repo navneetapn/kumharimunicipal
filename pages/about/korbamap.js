@@ -15,7 +15,7 @@ export default function Korbamap() {
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="About / Kumhari Map" />
             <section className="sectionBlock py-5">
-                <Container>
+                <Container className="text-center">
                     <Image src={map} alt="Kumhari Map" />
                 </Container>
             </section>

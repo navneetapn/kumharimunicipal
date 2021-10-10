@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nagar Nigam Korba</title>
+        <title>Kumhari Nagar Palika</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <Header />

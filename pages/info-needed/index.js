@@ -14,8 +14,8 @@ export default function Pageneeded() {
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Information Required" />
             <section className="sectionBlock py-5">
-                <Container>
-                    Information needs to be provided
+            <Container className="text-center py-5">
+                   <div><h2>Information needs to be provided</h2></div>
                 </Container>
             </section>
             <Footer />

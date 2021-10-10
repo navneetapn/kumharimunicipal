@@ -34,7 +34,7 @@ export default function Municipalactsrules() {
                                 <tr>
                                     <td>2</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="MUNICIPAL ACT" target="_blank">Municipal Act</a></td>
+                                    <a href={basePath + "/docs/TheChhattisgarhMunicipalitiesAct_1.pdf"} title="MUNICIPAL ACT" target="_blank">Municipal Act</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>

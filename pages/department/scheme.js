@@ -42,38 +42,38 @@ export default function Scheme() {
                                 <tr>
                                     <td>4</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="AMRUT Mission Statement &amp; Guidelines" target="_blank">AMRUT Mission Statement &amp; Guidelines</a></td>
+                                        <a href={basePath + "/docs/amrut.pdf"} title="AMRUT Mission Statement Guidelines" target="_blank">AMRUT Mission Statement &amp; Guidelines</a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Operational Guidelines for Individual Capacity Building." target="_blank">Operational Guidelines for Individual Capacity Building.</a></td>
+                                        <a href={basePath + "/docs/Capacity_Building.pdf"} title="Operational Guidelines for Individual Capacity Building." target="_blank">Operational Guidelines for Individual Capacity Building.</a></td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Jawaharlal Nehru National Urban Renewal Mission" target="_blank">Jawaharlal Nehru National Urban Renewal Mission</a></td>
+                                        <a href={basePath + "/docs/JnNURM.pdf"} title="Jawaharlal Nehru National Urban Renewal Mission" target="_blank">Jawaharlal Nehru National Urban Renewal Mission</a></td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Guidelines for Swachh Bharat Mission (SBM)" target="_blank">Guidelines for Swachh Bharat Mission (SBM)</a></td>
+                                        <a href={basePath + "/docs/SBM.pdf"} title="Guidelines for Swachh Bharat Mission (SBM)" target="_blank">Guidelines for Swachh Bharat Mission (SBM)</a></td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Rajiv Awas Yojana (RAY) Scheme Guidelines 2013-2022" target="_blank">Rajiv Awas Yojana (RAY) Scheme Guidelines 2013-2022</a></td>
+                                        <a href={basePath + "/docs/RAY.pdf"} title="Rajiv Awas Yojana (RAY) Scheme Guidelines 2013-2022" target="_blank">Rajiv Awas Yojana (RAY) Scheme Guidelines 2013-2022</a></td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Faecal Sludge &amp; Septage Management" target="_blank">Faecal Sludge &amp; Septage Management</a></td>
+                                        <a href={basePath + "/docs/Policy_for_faecal_sludge_septage_management.pdf"} title="Faecal Sludge &amp; Septage Management" target="_blank">Faecal Sludge &amp; Septage Management</a></td>
                                 </tr>
 
                                 <tr>
                                     <td>10</td>
                                     <td>
-                                        <a href={basePath + "/info-needed"} title="Waste Water Recycle &amp; Reuse Policy" target="_blank">Waste Water Recycle &amp; Reuse Policy</a></td>
+                                        <a href={basePath + "/docs/policy_for_wate_water_recycle_an_reuse_policy.pdf"} title="Waste Water Recycle &amp; Reuse Policy" target="_blank">Waste Water Recycle &amp; Reuse Policy</a></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -69,14 +69,15 @@ export default function Header() {
                                 <NavDropdown title="About Us">
                                     <NavDropdown.Item href={basePath + "/about"}>Introduction of Kumhari</NavDropdown.Item>
                                     <NavDropdown.Item href={basePath + "/about/korbamap"}>Map of Kumhari</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/about/social-geological-of-korba"}>Social and Geological of Korba</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/info-needed"} target="_blank">Information of Wards</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/about/social-geological-of-korba"}>Social and Geological of Kumhari</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/about/ward-information"}>Information of Wards</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Administration">
                                     <NavDropdown.Item href={basePath+"/administration/organisation-structure"}>Organizational Structure</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/info-needed"}>Mayor List, Parshad List, Alderman List</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath+"/administration/mayor-list-parshad-list-alderman-list"}>Mayor List, Parshad List, Alderman List</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"} >Commissioner List</NavDropdown.Item>
                                     <NavDropdown.Item href={basePath + "/info-needed"} >Staff List</NavDropdown.Item>
-                                    <NavDropdown.Item href={basePath + "/info-needed"} target="_blank">Zonal Information</NavDropdown.Item>
+                                    <NavDropdown.Item href={basePath + "/info-needed"}>Zonal Information</NavDropdown.Item>
                                     <NavDropdown.Item href={basePath + "/info-needed"}>Quarterly Information of Municipal Staff</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Department">
@@ -99,10 +100,10 @@ export default function Header() {
                                 <Nav.Link href="/tenders">Tender</Nav.Link>
                                 <Nav.Link href="/noticeboard">Notice Board</Nav.Link>
                                 <NavDropdown title="APPs">
-                                    <NavDropdown.Item className="dropdown-item" href="#">Korba Nigam For You</NavDropdown.Item> 
-                                    <NavDropdown.Item className="dropdown-item" href="#">Complain Monitoring Application</NavDropdown.Item> 
-                                    <NavDropdown.Item className="dropdown-item" href="#">Swachhata MoUD</NavDropdown.Item> 
-                                    <NavDropdown.Item className="dropdown-item" href="#">Swachh Survekshan 2018 Mobile App</NavDropdown.Item> 
+                                    <NavDropdown.Item className="dropdown-item" href={basePath + "/info-needed"}>Kumhari Nigam Palika For You</NavDropdown.Item> 
+                                    <NavDropdown.Item className="dropdown-item" href={basePath + "/info-needed"}>Complain Monitoring Application</NavDropdown.Item> 
+                                    <NavDropdown.Item className="dropdown-item" href={basePath + "/info-needed"}>Swachhata MoUD</NavDropdown.Item> 
+                                    <NavDropdown.Item className="dropdown-item" href={basePath + "/info-needed"}>Swachh Survekshan 2018 Mobile App</NavDropdown.Item> 
                                     <NavDropdown.Item className="dropdown-item" href="https://play.google.com/store/apps/details?id=ch.zhaw.nishtha_att_sys" target="_blank">Nishtha App</NavDropdown.Item> 
                                 </NavDropdown>
                                 <Nav.Link href="/gallery">Photo Gallery</Nav.Link>

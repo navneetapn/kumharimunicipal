@@ -263,13 +263,13 @@ export default function Homepage() {
 									<Accordion.Header>Information</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#" target="_blank">अधिसूचना अधिनियम</a></li>
-											<li className=""><a href="#">Application Form from Citizen</a></li>
-											<li className=""><a href="#">RTI Information ( सूचना का अधिकार )</a></li>
-											<li className=""><a href="#">Vacancy & Appointment</a></li>
-											<li className=""><a href="documents/812432867.xls">BPL Survey List</a></li>
-											<li className=""><a href="docs/Giotagged_Detail.pdf">Geotagging Details Korba</a></li>
-											<li className=""><a href="docs/Swachta/SvachtaShakha.xls" target="_blank">शौचालयो की सम्पूर्ण जानकारी </a></li>
+											<li className=""><a href="https://uad.cg.gov.in/Home_pages/rajpatra.aspx" target="_blank">अधिसूचना अधिनियम</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Application Form from Citizen</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>RTI Information ( सूचना का अधिकार )</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Vacancy & Appointment</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>BPL Survey List</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Geotagging Details Kumhari</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>शौचालयो की सम्पूर्ण जानकारी </a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -282,10 +282,10 @@ export default function Homepage() {
 									<Accordion.Header>Swachhta Sarvekshan</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#">स्वच्छता सर्वेक्षण 2019</a></li>
-											<li className=""><a href="#">स्वच्छता सर्वेक्षण 2018</a></li>
-											<li className=""><a href="#">स्वच्छता सर्वेक्षण 2017</a></li>
-											<li className=""><a href="#">Vehicle Tracking Systems</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>स्वच्छता सर्वेक्षण 2019</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>स्वच्छता सर्वेक्षण 2018</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>स्वच्छता सर्वेक्षण 2017</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Vehicle Tracking Systems</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -294,7 +294,7 @@ export default function Homepage() {
 
 						<Col>
 							<div className="">
-								<a className="accordianWrapperDiv" target="_blank" href="docs/AnnualRate/annual%20rate.pdf">Annual Rate</a>
+								<a className="accordianWrapperDiv" href={basePath + "/info-needed"}>Annual Rate</a>
 							</div>
 						</Col>
 
@@ -304,13 +304,13 @@ export default function Homepage() {
 									<Accordion.Header>Amrut Mission</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#">e-Gov</a></li>
-											<li className=""><a href="#">Municipal Cadre</a></li>
-											<li className=""><a href="#">DEA</a></li>
-											<li className=""><a href="#">Urban Planning</a></li>
-											<li className=""><a href="#">SBM</a></li>
-											<li className=""><a href="#">Smart City Korba Public Poll</a></li>
-											<li className=""><a href="#">Credit Rating Korba</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>e-Gov</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Municipal Cadre</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>DEA</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Urban Planning</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>SBM</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Smart City Kumhari Public Poll</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Credit Rating Kumhari</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -320,7 +320,7 @@ export default function Homepage() {
 
 						<Col>
 							<div className="">
-								<a className="accordianWrapperDiv" href="docs/All_Date_PMAY.pdf" target="_blank">PMAY</a>
+								<a className="accordianWrapperDiv" href={basePath + "/info-needed"} target="_blank">PMAY</a>
 							</div>
 						</Col>
 
@@ -330,9 +330,9 @@ export default function Homepage() {
 									<Accordion.Header>Budget Report</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#">Budget</a></li>
-											<li className=""><a href="#">Income and Expenditure Account and Balance Sheet  </a></li>
-											<li className=""><a href="#">Demand Collection Balance </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Budget</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Income and Expenditure Account and Balance Sheet  </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Demand Collection Balance </a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -345,13 +345,13 @@ export default function Homepage() {
 									<Accordion.Header>संपदा विभाग</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#">दुकान विक्र्य</a></li>
-											<li className=""><a href="#">मकान विक्र्य </a></li>
-											<li className=""><a href="#">प्लाट विक्र्य</a></li>
-											<li className=""><a href="docs/Shop_Rent.pdf" target="_blank">दुकान किराया </a></li>
-											<li className=""><a href="#">नामांतरण</a></li>
-											<li className=""><a href="docs/Lease_Renewal.pdf" target="_blank">लीज नवीनीकरण</a></li>
-											<li className=""><a href="#">Post Demand Of Tax Collection Balance (2015-16)</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>दुकान विक्र्य</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>मकान विक्र्य </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>प्लाट विक्र्य</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>दुकान किराया </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>नामांतरण</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>लीज नवीनीकरण</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Post Demand Of Tax Collection Balance (2015-16)</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -364,16 +364,16 @@ export default function Homepage() {
 									<Accordion.Header>समाज कल्याण विभाग</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="docs/SamajKalyanVibhag/SUKHADSAHARAPENSION2021.pdf" target="_blank">सुखद सहारा पेंशन योजना</a></li>
-											<li className=""><a href="#">संगठित कर्मकरो की जानकारी </a></li>
-											<li className=""><a href="#">रैन बसेरा की जानकारी</a></li>
-											<li className=""><a href="#">मुख्यमंत्री तीर्थ यात्रा योजाना</a></li>
-											<li className=""><a href="#">संबंधित अन्य जानकारी</a></li>
-											<li className=""><a href="docs/SamajKalyanVibhag/VRIDHAWASTHAPENSION2021.pdf" target="_blank">इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन</a></li>
-											<li className=""><a href="docs/SamajKalyanVibhag/VIKLANG_PENSION_2021.pdf" target="_blank">विकलांग पेंशन</a></li>
-											<li className=""><a href="docs/SamajKalyanVibhag/VIDHAWA_PENSION_2021.pdf" target="_blank">विधवा पेंशन</a></li>
-											<li className=""><a href="docs/SamajKalyanVibhag/mukyamatri_pension.pdf" target="_blank">मुख्यमंत्री पेंशन</a></li>
-											<li className=""><a href="docs/SamajKalyanVibhag/SAMAJIKSURKSHAPENSION2021.pdf" target="_blank">सामाजिक सुरक्षा पेंशन</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>सुखद सहारा पेंशन योजना</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>संगठित कर्मकरो की जानकारी </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>रैन बसेरा की जानकारी</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>मुख्यमंत्री तीर्थ यात्रा योजाना</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>संबंधित अन्य जानकारी</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>विकलांग पेंशन</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>विधवा पेंशन</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>मुख्यमंत्री पेंशन</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>सामाजिक सुरक्षा पेंशन</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -386,7 +386,7 @@ export default function Homepage() {
 									<Accordion.Header>क्वान्टिफिएबल</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#" target="_blank">क्वान्टिफिएबल डाटा-2021 Link</a></li>
+											<li className=""><a href="https://uad.cg.gov.in/Home_Pages/Quanfitble2021.aspx" target="_blank">क्वान्टिफिएबल डाटा-2021 Link</a></li>
 											<li className=""><a href="https://play.google.com/store/apps/details?id=chips.in.supervisorapp" target="_blank">क्वान्टिफिएबल  cgqdc  सुपरवाईजर एप (प्ले स्टोर)</a></li>
 											<li className=""><a href="https://play.google.com/store/apps/details?id=chips.in.qdcuserapp" target="_blank">क्वान्टिफिएबल cgqdc यूजर एप (प्ले स्टोर)</a></li>
 										</ul>
@@ -401,9 +401,9 @@ export default function Homepage() {
 									<Accordion.Header>Latest News</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="#">अधिसूचना अधिनियम </a></li>
-											<li className=""><a href="#">Letter Upload</a></li>
-											<li className=""><a href="#">SLIP / SLBM Korba</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>अधिसूचना अधिनियम </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Letter Upload</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>SLIP / SLBM Kumhari</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -412,13 +412,7 @@ export default function Homepage() {
 
 						<Col>
 							<div className="">
-								<a className="accordianWrapperDiv" href="#" target="_blank">E-mail & SMS BroadCosting</a>
-							</div>
-						</Col>
-
-						<Col>
-							<div className="">
-								<a className="accordianWrapperDiv" href="#" target="_blank">Project & Scheme</a>
+								<a className="accordianWrapperDiv" href={basePath + "/info-needed"}>Project &amp; Scheme</a>
 							</div>
 						</Col>
 
@@ -428,9 +422,9 @@ export default function Homepage() {
 									<Accordion.Header>COVID-19</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="http://cghealth.nic.in/cghealth17/" target="_blank">COVID-19</a></li>
-											<li className=""><a href="#">होम आइसोलेशन हेतु शपथ पत्र </a></li>
-											<li className=""><a href="images/covid19/7.pdf" target="_blank">Covid 19 Vaccination Center</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>COVID-19</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>होम आइसोलेशन हेतु शपथ पत्र </a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Covid 19 Vaccination Center</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -443,10 +437,10 @@ export default function Homepage() {
 									<Accordion.Header>RTI</Accordion.Header>
 									<Accordion.Body>
 										<ul className=" list-unstyled m-0">
-											<li className=""><a href="docs/Placement_Labour.pdf" target="_blank">स्वच्छता शाखा में कार्यरत अधिकारी/कर्मचारि/प्लेसमेंट कर्मियो की जानकारी</a></li>
-											<li className=""><a href="#">Sou_Motu RTI Disclosure</a></li>
-											<li className=""><a href="#">RTI Statement - Jan-Dec 2017</a></li>
-											<li className=""><a href="#">RTI Act - 2005</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>स्वच्छता शाखा में कार्यरत अधिकारी/कर्मचारि/प्लेसमेंट कर्मियो की जानकारी</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>Sou_Motu RTI Disclosure</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>RTI Statement - Jan-Dec 2017</a></li>
+											<li className=""><a href={basePath + "/info-needed"}>RTI Act - 2005</a></li>
 										</ul>
 									</Accordion.Body>
 								</Accordion.Item>
@@ -454,21 +448,17 @@ export default function Homepage() {
 						</Col>
 
 
+
 						<Col>
 							<div className="">
-								<a className="accordianWrapperDiv" href="#" target="_blank">Feedback/Suggestions</a>
-							</div>
-						</Col>
-						<Col>
-							<div className="">
-								<a className="accordianWrapperDiv" href="#" target="_blank">Financial Statement and Internal Audit Report</a>
+								<a className="accordianWrapperDiv" href={basePath + "/info-needed"}>Financial Statement and Internal Audit Report</a>
 							</div>
 						</Col>
 					</Row>
 				</Container>
 			</section>
 
-			<section className="videoSection bg-dark py-5">
+			<section className="videoSection bg-dark">
 				<Container>
 					<Row>
 						<Col className="col-12 col-sm-4">
@@ -508,7 +498,7 @@ export default function Homepage() {
 				<section className="bg-light galleryWrapper galleryWrapperHome">
 					<SRLWrapper>
 						<div className="container">
-							{galleryData.map(image => (
+							{galleryData.slice(1, 5).map(image => (
 								<div key={image.id} className="image-card">
 									<a href={`${image.image}`}>
 										<img className="image" src={`${image.image}`} alt="" />
