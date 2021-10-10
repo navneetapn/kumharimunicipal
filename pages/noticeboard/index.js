@@ -6,6 +6,7 @@ import Header from '../../components/Header'
 import banner from '../../public/banners/banner.webp'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 
 export default function NoticeBoard() {
@@ -42,6 +43,11 @@ export default function NoticeBoard() {
     } else if (!isLoaded) {
         return (
             <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>NoticeBoard | Kumhari Municipal Corporation</title>
+            </Helmet>
+
                 <>  <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />

@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 export default function Contact() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -24,6 +25,10 @@ export default function Contact() {
     }, []);
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact Us | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
                 <BreadCrumb banner={bannerBreadcrumbs} name="Contact Us" />
                 <section className="py-5">

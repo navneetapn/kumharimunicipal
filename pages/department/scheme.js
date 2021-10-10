@@ -4,6 +4,9 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
+
+
 export default function Scheme() {
     const [basePath, setBasepath] = useState([]);
     useEffect(() => {
@@ -11,6 +14,10 @@ export default function Scheme() {
     }, []);
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Scheme | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Department / Scheme" />
             <section className="sectionBlock py-5">

@@ -14,10 +14,17 @@ import DM7 from '../../public/department/disaster/DM7.jpg'
 import DM8 from '../../public/department/disaster/DM8.jpg'
 import DM9 from '../../public/department/disaster/DM9.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
+
+
 export default function Disastermanagement() {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Disaster Management | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Department / Disaster Management" />
             <section className="sectionBlock py-5">

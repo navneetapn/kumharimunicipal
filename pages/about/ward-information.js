@@ -6,11 +6,16 @@ import map from '../../public/about/map.jpg';
 import Image from 'next/image'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 export default function Wardinformation() {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ward Information | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="About / Ward of information" />
             <section className="sectionBlock py-5">

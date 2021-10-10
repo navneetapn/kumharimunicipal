@@ -6,12 +6,16 @@ import Image from 'next/image';
 import commissioner from '../../public/images/kuldip_sharma.jpg';
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
-
+import {Helmet} from "react-helmet";
 
 
 export default function Commissionerlist() {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Commissioner List | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Administration / Commissioner List" />
             <section className="sectionBlock py-5">

@@ -6,11 +6,16 @@ import map from '../../public/about/map.jpg';
 import Image from 'next/image'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 export default function Pageneeded() {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Info Needed | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Information Required" />
             <section className="sectionBlock py-5">

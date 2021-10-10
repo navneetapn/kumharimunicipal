@@ -6,6 +6,7 @@ import Header from '../../components/Header'
 import banner from '../../public/banners/banner.webp'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 
 export default function News() {
@@ -43,7 +44,12 @@ export default function News() {
     } else if (!isLoaded) {
         return (
             <>
-                <>  <Header />
+                <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>News | Kumhari Municipal Corporation</title>
+            </Helmet>
+             <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />
                         <Placeholder xs={12} />

@@ -5,6 +5,7 @@ import { SRLWrapper} from 'simple-react-lightbox';
 import { Container, Table, Button,Row,Col, Placeholder, Alert} from 'react-bootstrap'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 export default function Gallery() {
  
@@ -67,6 +68,10 @@ export default function Gallery() {
     } else {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Gallery | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Event Gallery" />
             <section className="bg-light py-5 galleryWrapper">

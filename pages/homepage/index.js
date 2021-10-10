@@ -9,6 +9,7 @@ import mayor from '../../public/images/department/mayor.jpg';
 import { SRLWrapper } from 'simple-react-lightbox';
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
+import {Helmet} from "react-helmet";
 
 export default function Homepage() {
 	const [error, setError] = useState(null);
@@ -114,6 +115,10 @@ export default function Homepage() {
 	}, []);
 	return (
 		<>
+		   <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home | Kumhari Municipal Corporation</title>
+            </Helmet>
 			<Carousel>
 				{carouselData.map((el, index) =>
 					<Carousel.Item key={index}>

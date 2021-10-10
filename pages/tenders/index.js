@@ -5,7 +5,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
-
+import {Helmet} from "react-helmet";
 
 export default function Tender() {
     const [error, setError] = useState(null);
@@ -43,8 +43,12 @@ export default function Tender() {
         </>);
     } else if (!isLoaded) {
         return (
-            <>
-                <>  <Header />
+            <> <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Tender | Kumhari Municipal Corporation</title>
+            </Helmet>
+                 <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />
                         <Placeholder xs={12} />
