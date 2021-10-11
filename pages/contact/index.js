@@ -10,7 +10,7 @@ export default function Contact() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [contactData, setcontactData] = useState([]);
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/contact-us")
+        fetch("http://admin.kumharimunicipal.in/api/contact-us")
             .then(res => res.json())
             .then(
                 (result) => {

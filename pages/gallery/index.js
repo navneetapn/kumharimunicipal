@@ -14,7 +14,7 @@ export default function Gallery() {
     const [galleryData, setGalleryData] = useState([]);
         
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/gallery")
+        fetch("http://admin.kumharimunicipal.in/api/gallery")
             .then(res => res.json())
             .then(
                 (result) => {

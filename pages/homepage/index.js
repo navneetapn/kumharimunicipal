@@ -26,7 +26,7 @@ export default function Homepage() {
 	}, []);
 
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/notices")
+		fetch("http://admin.kumharimunicipal.in/api/notices")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -41,7 +41,7 @@ export default function Homepage() {
 	}, []);
 
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/ministers")
+		fetch("http://admin.kumharimunicipal.in/api/ministers")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -55,7 +55,7 @@ export default function Homepage() {
 			)
 	}, []);
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/tenders")
+		fetch("http://admin.kumharimunicipal.in/api/tenders")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -69,7 +69,7 @@ export default function Homepage() {
 			)
 	}, []);
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/banners")
+		fetch("http://admin.kumharimunicipal.in/api/banners")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -83,7 +83,7 @@ export default function Homepage() {
 			)
 	}, []);
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/video")
+		fetch("http://admin.kumharimunicipal.in/api/video")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -100,7 +100,7 @@ export default function Homepage() {
 
 
 	useEffect(() => {
-		fetch("https://classified-claylist.herokuapp.com/api/latest-gallery")
+		fetch("http://admin.kumharimunicipal.in/api/latest-gallery")
 			.then(res => res.json())
 			.then(
 				(result) => {

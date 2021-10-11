@@ -16,7 +16,7 @@ export default function Tender() {
         setBasepath(window.location.origin);
     }, []);
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/tenders")
+        fetch("http://admin.kumharimunicipal.in/api/tenders")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -44,10 +44,6 @@ export default function Tender() {
     } else if (!isLoaded) {
         return (
             <> <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Tender | Kumhari Municipal Corporation</title>
-            </Helmet>
                  <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />
@@ -73,6 +69,10 @@ export default function Tender() {
     } else {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Tender | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Tender" />
             <section className="bg-light tenderWrapper">

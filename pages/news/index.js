@@ -15,7 +15,7 @@ export default function News() {
     const [newsData, setNewsData] = useState([]);
         
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/news")
+        fetch("http://admin.kumharimunicipal.in/api/news")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -28,7 +28,6 @@ export default function News() {
                 }
             )
     }, []);
-    console.log(`newsData`, newsData)
     if (error) {
         return (
         <>
@@ -45,10 +44,6 @@ export default function News() {
         return (
             <>
                 <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>News | Kumhari Municipal Corporation</title>
-            </Helmet>
              <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />
@@ -74,6 +69,10 @@ export default function News() {
     } else {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>News | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="News" />
             <section className="bg-light tenderWrapper">

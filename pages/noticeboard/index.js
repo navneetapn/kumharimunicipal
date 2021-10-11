@@ -15,7 +15,7 @@ export default function NoticeBoard() {
     const [noticeBoardData, setNoticeBoardData] = useState([]);
         
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/notices")
+        fetch("http://admin.kumharimunicipal.in/api/notices")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -43,11 +43,6 @@ export default function NoticeBoard() {
     } else if (!isLoaded) {
         return (
             <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>NoticeBoard | Kumhari Municipal Corporation</title>
-            </Helmet>
-
                 <>  <Header />
                     <Container className="py-5">
                         <Placeholder xs={12} size="lg" />
@@ -73,6 +68,10 @@ export default function NoticeBoard() {
     } else {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>NoticeBoard | Kumhari Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Notice Board" />
             <section className="bg-light tenderWrapper">

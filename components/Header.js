@@ -13,7 +13,7 @@ export default function Header() {
         setBasepath(window.location.origin);
     }, []);
     useEffect(() => {
-        fetch("https://classified-claylist.herokuapp.com/api/settings")
+        fetch("http://admin.kumharimunicipal.in/api/settings")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -28,10 +28,10 @@ export default function Header() {
     }, []);
     return (
         <>  
-            <Head>
+            {/* <Head>
                 <title>{settings.site_name}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </Head> */}
             <div className="py-2 topnavbar">
                 <Container>
                     <Row className="g-4">
